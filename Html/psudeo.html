@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>psudeo class and element</title>
+        <style>
+            input[type="number"]:out-of-range
+            {border: 2px solid red;}
+            input[type="number"]:in-range
+            {border: 2px solid green;}
+            input[type="email"]:invalid
+            {border: 2px solid red;}
+            p::first-line
+            {text-decoration: underline;}
+            p::first-letter
+            {font-size: 20;
+            color: red;}
+            p::before
+            {content:"klu";}
+            p::after
+            {content: "end";}
+            p::selection{
+                background-color: gray;
+                color: white;
+            }
+            li::marker{
+                color:red
+            }
+            .cl{list-style-type: none;}
+            .cl li::before
+            {content: "\2713";
+              color:red;
+              margin-right: 5px;
+    }
+        </style>
+    </head>
+
+    <body>
+        <input type="number" placeholder="enter age"  min="0" max="18" style="width:500px;">
+        <br><br>
+        <input type="email" placeholder="enter email"   style="width:500px;">
+        <br><br>
+        <p>
+            Could you clarify what you're referring to by "paragra"? Are you asking for a paragraph on a specific topic or something else? Let me know so I can assist you accordingly!
+</p>
+<ul>
+    <li>klu</li>
+    <li>cse</li>
+    <li>edtech</li>
+    <li>page</li>
+</ul>
+<ul class="cl">
+    <li>klu</li>
+    <li>cse</li>
+    <li>edtech</li>
+    <li>page</li>
+</ul>
+    </body>
+</html>
